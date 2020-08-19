@@ -15,6 +15,8 @@ public class HeapConnector {
     }
 
     public void track(String eventName, String playerName, String eventProps) throws IOException {
+
+//        System.out.println(eventProps);
         URL url = new URL("https://heapanalytics.com/api/track");
         HttpURLConnection con = (HttpURLConnection) url.openConnection();
         con.setRequestMethod("POST");
